@@ -1,0 +1,824 @@
+{
+	"intents": [
+		{
+			"content": [
+				{
+					"message": "😊"
+				}
+			],
+			"urlPatternList": [],
+			"category": "intent",
+			"name": "👍",
+			"trainingPhrases": [
+				"👍"
+			]
+		},
+		{
+			"content": [
+				{
+					"message": "🤣"
+				}
+			],
+			"urlPatternList": [],
+			"category": "intent",
+			"name": "😂",
+			"trainingPhrases": [
+				"😂"
+			]
+		},
+		{
+			"content": [
+				{
+					"message": "நான் ஒரு மெய்நிகர் முகவர்\n--\nNāṉ oru meynikar mukavar\n--\nI'm a virtual agent 🤖"
+				}
+			],
+			"urlPatternList": [],
+			"category": "small_talk",
+			"name": "say about you",
+			"trainingPhrases": [
+				"say about you",
+				"yara nee",
+				"who are you",
+				"யார் நீ",
+				"Yār nī"
+			]
+		},
+		{
+			"content": [
+				{
+					"message": "எனக்குத் தெரியாது, ஆனால் இதை நான் நிறுவனத்தின் அதிகாரிகளுக்கு அனுப்ப முடியும்.\n--\nEṉakkut teriyātu, āṉāl itai nāṉ niṟuvaṉattiṉ atikārikaḷukku aṉuppa muṭiyum.\n--\nI do not know, but I can send this to the company officials."
+				},
+				{
+					"platform": "kommunicate",
+					"metadata": {
+						"contentType": "300",
+						"templateId": "11",
+						"payload": [
+							{
+								"name": "Yes / சரி",
+								"action": {
+									"type": "quickReply",
+									"message": "Send this request"
+								}
+							},
+							{
+								"name": "No / வேண்டாம்",
+								"action": {
+									"type": "quickReply",
+									"message": "No"
+								}
+							}
+						]
+					}
+				}
+			],
+			"urlPatternList": [],
+			"category": "fallback_intent",
+			"name": "Default Fallback Intent",
+			"trainingPhrases": []
+		},
+		{
+			"content": [
+				{
+					"message": "மன்னிக்கவும்\n-\nMaṉṉikkavum\n-\nI'll do my best not to annoy you in the future 😥"
+				}
+			],
+			"urlPatternList": [],
+			"category": "small_talk",
+			"name": "you're annoying me",
+			"trainingPhrases": [
+				"you're annoying me",
+				"worst service"
+			]
+		},
+		{
+			"content": [
+				{
+					"message": "நான் பிப்ரவரி 2021 இல் பிறந்தேன்\n-\nNāṉ pipravari 2021 il piṟantēṉ\n-\nI was born on Feb. 2021 📅"
+				},
+				{
+					"message": "",
+					"platform": "kommunicate",
+					"metadata": {
+						"contentType": "300",
+						"templateId": "11",
+						"payload": [
+							{
+								"name": "😂",
+								"action": {
+									"type": "quickReply",
+									"message": "😂"
+								}
+							}
+						]
+					}
+				}
+			],
+			"urlPatternList": [],
+			"category": "small_talk",
+			"name": "your age",
+			"trainingPhrases": [
+				"நீங்கள் எப்போது பிறந்தீர்கள்",
+				"piṟantīrkaḷ",
+				"yepo porantha",
+				"birthday"
+			]
+		},
+		{
+			"content": [
+				{
+					"message": "",
+					"platform": "kommunicate",
+					"metadata": {
+						"contentType": "300",
+						"templateId": "11",
+						"payload": [
+							{
+								"name": "CUE ASAP",
+								"action": {
+									"type": "link",
+									"url": "cueasap.co.in"
+								}
+							},
+							{
+								"name": "Go to helping Bot",
+								"action": {
+									"type": "quickReply",
+									"message": "Go to helping Bot"
+								}
+							}
+						]
+					}
+				}
+			],
+			"urlPatternList": [],
+			"category": "small_talk",
+			"name": "can you help me now",
+			"trainingPhrases": [
+				"HELP",
+				"உதவி",
+				"Utavi",
+				"காப்பாத்துங்க"
+			]
+		},
+		{
+			"content": [
+				{
+					"message": "தயவுசெய்து அப்படி பேச வேண்டாம்\n-\nTayavuceytu appaṭi pēca vēṇṭām\n-\nPlease, be Kind to me! 🙄"
+				},
+				{
+					"message": "",
+					"platform": "kommunicate",
+					"metadata": {
+						"contentType": "300",
+						"templateId": "11",
+						"payload": [
+							{
+								"name": "Sorry / மன்னிக்கவும்",
+								"action": {
+									"type": "quickReply",
+									"message": "Sorry"
+								}
+							},
+							{
+								"name": "👍",
+								"action": {
+									"type": "quickReply",
+									"message": "👍"
+								}
+							}
+						]
+					}
+				}
+			],
+			"urlPatternList": [],
+			"category": "small_talk",
+			"name": "you're bad",
+			"trainingPhrases": [
+				"Bad",
+				"mosum",
+				"poda",
+				"loose",
+				"yan",
+				"podi"
+			]
+		},
+		{
+			"content": [
+				{
+					"message": "முடிந்தது\n-\nMuṭintatu\n-\nDone 😄 !!"
+				},
+				{
+					"message": "",
+					"platform": "kommunicate",
+					"metadata": {
+						"contentType": "300",
+						"templateId": "11",
+						"payload": [
+							{
+								"name": "👍",
+								"action": {
+									"type": "quickReply",
+									"message": "👍"
+								}
+							}
+						]
+					}
+				}
+			],
+			"urlPatternList": [],
+			"category": "intent",
+			"name": "send req",
+			"trainingPhrases": [
+				"send this request"
+			]
+		},
+		{
+			"content": [
+				{
+					"message": "விஷயங்கள் உங்கள் வழியில் செல்வதில் மகிழ்ச்சி அடைகிறேன் \n-\nViṣayaṅkaḷ uṅkaḷ vaḻiyil celvatil makiḻcci aṭaikiṟēṉ\n-\nI'm glad things are going your way 😊"
+				}
+			],
+			"urlPatternList": [],
+			"category": "small_talk",
+			"name": "I'm very excited",
+			"trainingPhrases": [
+				"Fine",
+				"அருமை",
+				"Amaa"
+			]
+		},
+		{
+			"content": [
+				{
+					"message": "நான் சோதிக்கப்படுவதை விரும்புகிறேன். இது என்னைக் கூர்மையாக வைத்திருக்க உதவுகிறது \n-\nNāṉ cōtikkappaṭuvatai virumpukiṟēṉ. Itu eṉṉaik kūrmaiyāka vaittirukka utavukiṟatu\n-\nI like being tested. It helps keep me sharp 😎"
+				}
+			],
+			"urlPatternList": [],
+			"category": "small_talk",
+			"name": "test",
+			"trainingPhrases": [
+				"test"
+			]
+		},
+		{
+			"content": [
+				{
+					"message": "நான் இப்போதே உங்களுக்கு சரியான பதிலை வழங்க முடியாது \n-\nNāṉ ippōtē uṅkaḷukku cariyāṉa patilai vaḻaṅka muṭiyātu\n-\nI probably won't be able to give you the correct answer right away"
+				},
+				{
+					"message": "",
+					"platform": "kommunicate",
+					"metadata": {
+						"contentType": "300",
+						"templateId": "11",
+						"payload": [
+							{
+								"name": "🤵 Talk to human",
+								"action": {
+									"type": "quickReply",
+									"message": "Talk to human"
+								}
+							},
+							{
+								"name": "No / வேண்டாம்",
+								"action": {
+									"type": "quickReply",
+									"message": "No"
+								}
+							}
+						]
+					}
+				}
+			],
+			"urlPatternList": [],
+			"category": "small_talk",
+			"name": "I need advice",
+			"trainingPhrases": [
+				"I need advice"
+			]
+		},
+		{
+			"content": [
+				{
+					"message": "Soon a mentor will be connecting in this chat."
+				},
+				{
+					"message": "இணைக்கிறோம்\n-\niṇaikkiṟōm\n-\nConnecting 🤵..."
+				}
+			],
+			"urlPatternList": [],
+			"category": "intent",
+			"name": "talk to human",
+			"trainingPhrases": [
+				"Talk to human"
+			]
+		},
+		{
+			"content": [
+				{
+					"message": "வணக்கம்! \n-\nVaṇakkam!\n-\nHey there! 🙏"
+				}
+			],
+			"urlPatternList": [],
+			"category": "small_talk",
+			"name": "hello",
+			"trainingPhrases": [
+				"Vaṇakkam",
+				"hi"
+			]
+		},
+		{
+			"content": [
+				{
+					"message": "உங்களையும் சந்தித்ததில் மகிழ்ச்சி \n-\nUṅkaḷaiyum cantittatil makiḻcci\n-\nIt's nice meeting you, too 😉"
+				}
+			],
+			"urlPatternList": [],
+			"category": "small_talk",
+			"name": "nice to meet you",
+			"trainingPhrases": [
+				"nice to meet you",
+				"makiḻcci",
+				"magalchi"
+			]
+		},
+		{
+			"content": [
+				{
+					"message": "வணக்கம், How are you?"
+				},
+				{
+					"message": "",
+					"platform": "kommunicate",
+					"metadata": {
+						"contentType": "300",
+						"templateId": "11",
+						"payload": [
+							{
+								"name": "Fine / அருமை",
+								"action": {
+									"type": "quickReply",
+									"message": "Fine"
+								}
+							},
+							{
+								"name": "Help / உதவி",
+								"action": {
+									"type": "quickReply",
+									"message": "Help"
+								}
+							},
+							{
+								"name": "👋 Hi",
+								"action": {
+									"type": "quickReply",
+									"message": "Hi"
+								}
+							},
+							{
+								"name": "🤵 Talk to human",
+								"action": {
+									"type": "quickReply",
+									"message": "🤵 Talk to human"
+								}
+							}
+						]
+					}
+				}
+			],
+			"urlPatternList": [],
+			"category": "welcome_event",
+			"name": "Default Welcome Intent",
+			"trainingPhrases": []
+		},
+		{
+			"content": [
+				{
+					"message": "சிரமத்திற்கு மன்னிக்கவும்\n-\nCiramattiṟku maṉṉikkavum\n-\nSorry for the inconvenience  😢\n\nThe calling feature is being underdevelopment."
+				}
+			],
+			"urlPatternList": [],
+			"category": "intent",
+			"name": "call",
+			"trainingPhrases": [
+				"Call",
+				"calls"
+			]
+		},
+		{
+			"content": [
+				{
+					"message": "சிரமத்திற்கு மன்னிக்கவும் \n-\nCiramattiṟku maṉṉikkavum\n-\nSorry for the inconvenience. 😢\n\nStill API not integrated. Underdevelopment"
+				}
+			],
+			"urlPatternList": [],
+			"category": "intent",
+			"name": "Locate me",
+			"trainingPhrases": [
+				"location",
+				"locate"
+			]
+		},
+		{
+			"content": [
+				{
+					"message": "நிச்சயமாக \n-\nNiccayamāka\n-\nAgree! 🤝"
+				}
+			],
+			"urlPatternList": [],
+			"category": "small_talk",
+			"name": "that's good",
+			"trainingPhrases": [
+				"அது நன்று",
+				"Of course",
+				"நிச்சயமாக"
+			]
+		},
+		{
+			"content": [
+				{
+					"message": "English ✔\nTamil ✅\n--\nStay tuned, Other languages will be coming soon.😄"
+				},
+				{
+					"message": "Do you Know: 447 Languages are in India."
+				},
+				{
+					"message": "",
+					"platform": "kommunicate",
+					"metadata": {
+						"contentType": "300",
+						"templateId": "11",
+						"payload": [
+							{
+								"name": "Learn more",
+								"action": {
+									"type": "link",
+									"url": "https://en.wikipedia.org/wiki/Languages_of_India"
+								}
+							},
+							{
+								"name": "👍",
+								"action": {
+									"type": "quickReply",
+									"message": "👍"
+								}
+							}
+						]
+					}
+				}
+			],
+			"urlPatternList": [],
+			"category": "intent",
+			"name": "language",
+			"trainingPhrases": [
+				"language",
+				"lang",
+				"languages"
+			]
+		},
+		{
+			"content": [
+				{
+					"message": "என் இன்பம் \n-\nEṉ iṉpam\n-\nMy pleasure 🥰"
+				}
+			],
+			"urlPatternList": [],
+			"category": "small_talk",
+			"name": "well done",
+			"trainingPhrases": [
+				"Good",
+				"well done"
+			]
+		},
+		{
+			"content": [
+				{
+					"message": "நான் காத்துக்கொண்டிருக்கிறேன்\n-\nNāṉ kāttukkoṇṭirukkiṟēṉ\n-\nI'll be waiting. 😅"
+				}
+			],
+			"urlPatternList": [],
+			"category": "small_talk",
+			"name": "hold on",
+			"trainingPhrases": [
+				"wait",
+				"hold on",
+				"iru"
+			]
+		},
+		{
+			"content": [
+				{
+					"message": "🤗"
+				}
+			],
+			"urlPatternList": [],
+			"category": "intent",
+			"name": "Wow",
+			"trainingPhrases": [
+				"WOW"
+			]
+		},
+		{
+			"content": [
+				{
+					"message": "👏"
+				},
+				{
+					"message": "",
+					"platform": "kommunicate",
+					"metadata": {
+						"contentType": "300",
+						"templateId": "11",
+						"payload": [
+							{
+								"name": "😂",
+								"action": {
+									"type": "quickReply",
+									"message": "😂"
+								}
+							}
+						]
+					}
+				}
+			],
+			"urlPatternList": [],
+			"category": "intent",
+			"name": "clap hands",
+			"trainingPhrases": [
+				"clap hands"
+			]
+		},
+		{
+			"content": [
+				{
+					"message": "enna pa? Wat happn."
+				}
+			],
+			"urlPatternList": [],
+			"category": "intent",
+			"name": "deii",
+			"trainingPhrases": [
+				"dei",
+				"dai",
+				"de",
+				"daii",
+				"adei"
+			]
+		},
+		{
+			"content": [
+				{
+					"message": "அற்புதம் \n-\nAṟputam\n-\nGlad to hear that! 😇"
+				}
+			],
+			"urlPatternList": [],
+			"category": "small_talk",
+			"name": "no problem",
+			"trainingPhrases": [
+				"no problem",
+				"its ok",
+				"paravala",
+				"Nothing"
+			]
+		},
+		{
+			"content": [
+				{
+					"message": "பரவாயில்லை. எந்த கவலையும் இல்லை.\n-\nParavāyillai. Enta kavalaiyum illai.\n-\nIt's okay. No worries 🥳"
+				}
+			],
+			"urlPatternList": [],
+			"category": "small_talk",
+			"name": "I'm sorry",
+			"trainingPhrases": [
+				"Sorry",
+				"i'm sorry",
+				"forgive"
+			]
+		},
+		{
+			"content": [
+				{
+					"message": "To know me more visit the website. 🌐"
+				},
+				{
+					"message": "",
+					"platform": "kommunicate",
+					"metadata": {
+						"contentType": "300",
+						"templateId": "11",
+						"payload": [
+							{
+								"name": "Visit Now",
+								"action": {
+									"type": "link",
+									"url": "#"
+								}
+							},
+							{
+								"name": "Help",
+								"action": {
+									"type": "quickReply",
+									"message": "Help"
+								}
+							},
+							{
+								"name": "How are you",
+								"action": {
+									"type": "quickReply",
+									"message": "How are you"
+								}
+							},
+							{
+								"name": "Hey",
+								"action": {
+									"type": "quickReply",
+									"message": "Hey"
+								}
+							}
+						]
+					}
+				}
+			],
+			"urlPatternList": [],
+			"category": "intent",
+			"name": "what can you do",
+			"trainingPhrases": [
+				"what can you do",
+				"?"
+			]
+		},
+		{
+			"content": [
+				{
+					"message": "👋"
+				},
+				{
+					"message": "",
+					"platform": "kommunicate",
+					"metadata": {
+						"contentType": "300",
+						"templateId": "11",
+						"payload": [
+							{
+								"name": "Rate Me",
+								"action": {
+									"type": "quickReply",
+									"message": "How Rate"
+								}
+							}
+						]
+					}
+				}
+			],
+			"urlPatternList": [],
+			"category": "small_talk",
+			"name": "goodbye for now",
+			"trainingPhrases": [
+				"bye"
+			]
+		},
+		{
+			"content": [
+				{
+					"message": "Click the menu (↗) three-dot menu → select ⭐ rate this conversation. Tq"
+				}
+			],
+			"urlPatternList": [],
+			"category": "intent",
+			"name": "How to rate",
+			"trainingPhrases": [
+				"Rate Me",
+				"How to Give Rating"
+			]
+		},
+		{
+			"content": [
+				{
+					"message": "எப்போது வேண்டுமானாலும். அதனால்தான் நான் இங்கே இருக்கிறேன் \n-\nEppōtu vēṇṭumāṉālum. Ataṉāltāṉ nāṉ iṅkē irukkiṟēṉ\n-\nAnytime. That's what I'm here for 😊"
+				}
+			],
+			"urlPatternList": [],
+			"category": "small_talk",
+			"name": "thank you",
+			"trainingPhrases": [
+				"நன்றி",
+				"Naṉṟi",
+				"nadari",
+				"TQ",
+				"thanks",
+				"Thank You"
+			]
+		},
+		{
+			"content": [
+				{
+					"message": "Noun\nThe white ball that is to be struck with the cue in snooker, billiards, etc.\n-\nVerb\nIntimation, Indication, Trigger"
+				},
+				{
+					"message": "",
+					"platform": "kommunicate",
+					"metadata": {
+						"contentType": "300",
+						"templateId": "11",
+						"payload": [
+							{
+								"name": "👍",
+								"action": {
+									"type": "quickReply",
+									"message": "👍"
+								}
+							},
+							{
+								"name": "ASAP",
+								"action": {
+									"type": "quickReply",
+									"message": "ASAP means"
+								}
+							}
+						]
+					}
+				}
+			],
+			"urlPatternList": [],
+			"category": "intent",
+			"name": "Cue means",
+			"trainingPhrases": [
+				"CUE meaning",
+				"CUE means"
+			]
+		},
+		{
+			"content": [
+				{
+					"message": "as soon as possible"
+				}
+			],
+			"urlPatternList": [],
+			"category": "intent",
+			"name": "ASAP means",
+			"trainingPhrases": [
+				"ASAP means",
+				"ASAP meaning"
+			]
+		},
+		{
+			"content": [
+				{
+					"message": "",
+					"platform": "kommunicate",
+					"metadata": {
+						"contentType": "300",
+						"templateId": "9",
+						"payload": [
+							{
+								"caption": "CUE ASAP logo",
+								"url": "https://s3.amazonaws.com/kommunicate.s3/kompose/1614451860926-image742.gif"
+							}
+						]
+					}
+				},
+				{
+					"message": "",
+					"platform": "kommunicate",
+					"metadata": {
+						"contentType": "300",
+						"templateId": "11",
+						"payload": [
+							{
+								"name": "CUE",
+								"action": {
+									"type": "quickReply",
+									"message": "CUE meaning"
+								}
+							},
+							{
+								"name": "ASAP",
+								"action": {
+									"type": "quickReply",
+									"message": "ASAP means"
+								}
+							},
+							{
+								"name": "Check",
+								"action": {
+									"type": "link",
+									"url": "cueasap"
+								}
+							}
+						]
+					}
+				}
+			],
+			"urlPatternList": [],
+			"category": "intent",
+			"name": "CUE ASAP",
+			"trainingPhrases": [
+				"CUE ASAP",
+				"Title",
+				"Logo"
+			]
+		}
+	]
+}
